@@ -1,0 +1,34 @@
+{
+  "id": "2663812d-fc5e-48e0-8c5d-7b58b7a991c2",
+  "name": "Extreme Levels",
+  "version": "1.0.0",
+  "description": "Some fun challenging levels to try",
+  "levels": [
+    {
+      "name": "Reverse",
+      "description": "Reverse the order of letters in the word",
+      "luaFile": "reverse.lua"
+    },
+    {
+      "name": "Unary to Binary",
+      "description": "Convert the unary number to a binary number",
+      "luaFile": "unaryToBinary.lua"
+    },
+    {
+      "name": "Binary Addition",
+      "description": "Output the result of the binary addition",
+      "luaFile": "binaryAdd.lua"
+    },
+    {
+      "name": "Switch First / Last",
+      "description": "Switch the first letter and last letter in the word",
+      "luaFile": "switchFirstLast.lua"
+    },
+    {
+      "name": "Remove the Center",
+      "description": "Remove the middle letter from the string\n\nThe string will always be an odd length",
+      "luaFile": "removeCenter.lua"
+    }
+  ],
+  "winMessage": "You rock! I can't believe you solved all of the extreme puzzles.\n\nNow try to build your own level pack with even harder levels..."
+}

@@ -1,0 +1,69 @@
+{
+  "id": "eddf34eb-17c0-480d-a915-4d9bca1b980e",
+  "name": "Default Levels",
+  "version": "1.0.0",
+  "description": "Default level set to enjoy solving",
+  "levels": [
+    {
+      "name": "Capitalize",
+      "description": "Replace 'a', 'b', and 'c' with capital 'A', 'B', and 'C'",
+      "luaFile": "capitalize.lua"
+    },
+    {
+      "name": "Singleton",
+      "description": "Replace groups of the same letter with a single instance",
+      "luaFile": "singleton.lua"
+    },
+    {
+      "name": "Unary Addition",
+      "description": "Output the result of the unary addition",
+      "luaFile": "unaryAdd.lua"
+    },
+    {
+      "name": "Remove First 3",
+      "description": "Remove the first 3 letters from the word\n\nThe word length is always >= 3",
+      "luaFile": "removeFirst3.lua"
+    },
+    {
+      "name": "Alphabetical Sort",
+      "description": "Sort the letters so all a's appear before b's and all b's appear before c's",
+      "luaFile": "alphabeticalSort.lua"
+    },
+    {
+      "name": "Unary Subtraction",
+      "description": "Output the result of the unary subtraction\n\nThe right number will always be smaller to prevent overflows",
+      "luaFile": "unarySub.lua"
+    },
+    {
+      "name": "Duplicate",
+      "description": "Replace every letter with a second copy of the letter",
+      "luaFile": "duplicate.lua"
+    },
+    {
+      "name": "Inconsistent Replacement",
+      "description": "1. Replace the first instance of 'c' with 'b'\n2. Replace all other instances of 'b' with 'a'",
+      "luaFile": "replaceFirstC.lua"
+    },
+    {
+      "name": "Caesar Cipher",
+      "description": "Replace every 'a' with 'b', every 'b' with 'c', and every 'c' with 'a'",
+      "luaFile": "caesarCipher.lua"
+    },
+    {
+      "name": "Trim",
+      "description": "Remove all 'a' at the start and end of the string",
+      "luaFile": "trim.lua"
+    },
+    {
+      "name": "Every Other",
+      "description": "Remove every other letter from the word, starting with the first letter\n(So remove letters 1, 3, 5, etc.) ",
+      "luaFile": "everyOther.lua"
+    },
+    {
+      "name": "Most Common Letter",
+      "description": "Return the most common letter in the word\nThere will only be one most common letter",
+      "luaFile": "mostCommonLetter.lua"
+    }
+  ],
+  "winMessage": "Good job solving all of the default levels!\n\nNow try the extreme levels or create your own level pack!"
+}
