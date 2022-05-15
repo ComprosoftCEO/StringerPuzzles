@@ -45,8 +45,12 @@ fn main() {
   }
 
   let level_code = match opt.level_code {
-    None => {
-      return all_packs.print_loaded_packs();
+    None => match opt.pack_code {
+      None => return all_packs.print_loaded_packs(),
+      Some(code) => match all_packs.get_level_pack(&code) {
+        None => return println!("Unknown level pack ID '{}'", code),
+        Some(pack) => return pack.print(&code),
+      },
     },
     Some(code) => code,
   };

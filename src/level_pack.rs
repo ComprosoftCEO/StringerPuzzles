@@ -42,9 +42,9 @@ pub struct AllLevelPacks {
 #[serde(rename_all = "camelCase")]
 pub struct LevelPack {
   id: String,
+  name: String,
   #[serde(default = "default_version")]
   version: String,
-  name: String,
   description: String,
   levels: Vec<Level>,
   win_message: Option<String>,
@@ -157,8 +157,13 @@ impl LevelPack {
     self.next_level_code.get(code).map(String::as_str)
   }
 
-  pub fn print(&self, level_code: &str) {
+  /// Print out details about the level pack
+  pub fn print(&self, pack_code: &str) {
     println!("Level Pack: {}", self.name);
+    println!("  Version: {}", self.version);
+    println!("  Code: {}", pack_code);
+    println!("\n{}", self.description);
+    println!("\nLevel 1 Code: {}", self.get_starting_code());
   }
 
   /// Print the list of all level codes
